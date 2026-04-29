@@ -6,14 +6,14 @@ Each file under `submissions/` represents exactly one participant's response. Fi
 
 ## How to audit
 
-For any row *N* in the linked Google Sheet, there must exist a corresponding commit in this repo whose JSON content matches that row. A mismatch indicates either a Sheet edit that was not reflected in the audit log, or a GitHub commit that never made it to the Sheet. Both cases are immediately visible.
+For any row *N* in the linked Google Sheet, there must exist a corresponding commit in this repo whose JSON content matches that row.
 
 ## Integrity properties
 
 1. **Append-only** — new submissions are new files; nothing is ever rewritten.
-2. **Cryptographic chaining** — every commit is a SHA of the previous commit plus the new content. Any tampering breaks the chain.
+2. **Cryptographic chaining** — every commit is a SHA of the previous commit plus the new content.
 3. **GitHub-timestamped** — commit timestamps are set server-side by GitHub, not by the submitter.
 
 ## Contact
 
-Research team: HUM 403 Experimental Cognitive Psychology, EPFL / UNIL — see the main form repo.
+Research team: HUM 403 Experimental Cognitive Psychology, EPFL — see the main form repo.
